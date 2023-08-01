@@ -1,0 +1,14 @@
+E:\Khadok World\DAL\bin\Debug\DAL.dll.config
+E:\Khadok World\DAL\bin\Debug\DAL.dll
+E:\Khadok World\DAL\bin\Debug\DAL.pdb
+E:\Khadok World\DAL\bin\Debug\EntityFramework.dll
+E:\Khadok World\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Khadok World\DAL\bin\Debug\EntityFramework.xml
+E:\Khadok World\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Khadok World\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\Khadok World\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Khadok World\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Khadok World\DAL\obj\Debug\DAL.dll
+E:\Khadok World\DAL\obj\Debug\DAL.pdb
+E:\Khadok World\DAL\obj\Debug\DAL.Migrations.Registration.resources
+E:\Khadok World\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

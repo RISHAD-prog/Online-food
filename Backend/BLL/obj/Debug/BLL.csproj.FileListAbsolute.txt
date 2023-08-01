@@ -1,0 +1,14 @@
+E:\Khadok World\BLL\bin\Debug\BLL.dll
+E:\Khadok World\BLL\bin\Debug\BLL.pdb
+E:\Khadok World\BLL\bin\Debug\AutoMapper.dll
+E:\Khadok World\BLL\bin\Debug\DAL.dll
+E:\Khadok World\BLL\bin\Debug\EntityFramework.dll
+E:\Khadok World\BLL\bin\Debug\DAL.pdb
+E:\Khadok World\BLL\bin\Debug\DAL.dll.config
+E:\Khadok World\BLL\bin\Debug\AutoMapper.xml
+E:\Khadok World\BLL\bin\Debug\EntityFramework.xml
+E:\Khadok World\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Khadok World\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Khadok World\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Khadok World\BLL\obj\Debug\BLL.dll
+E:\Khadok World\BLL\obj\Debug\BLL.pdb
