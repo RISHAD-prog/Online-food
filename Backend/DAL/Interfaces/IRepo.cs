@@ -12,7 +12,7 @@ namespace DAL.Interfaces
         RETURNTYPE ADD(CLASS obj);
         List<CLASS> Get();
         RETURNTYPE Update(ID id);
-        bool Delete();
+        bool Delete(ID id);
 
     }
 }

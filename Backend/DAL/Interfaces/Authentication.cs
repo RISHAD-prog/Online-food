@@ -9,5 +9,6 @@ namespace DAL.Interfaces
     public interface Authentication<CLASS>
     {
         bool existingUser(CLASS user);
+        CLASS AuthUser(string email, string pass);
     }
 }

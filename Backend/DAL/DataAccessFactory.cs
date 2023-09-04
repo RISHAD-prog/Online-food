@@ -19,5 +19,9 @@ namespace DAL
         {
             return new RegistrationRepo();
         }
+        public static IRepo<Token, string, Token> AccessUserToken()
+        {
+            return new AuthRepo();
+        }
     }
 }

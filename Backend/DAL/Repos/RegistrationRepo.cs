@@ -20,6 +20,12 @@ namespace DAL.Repos
             return null;
         }
 
+        public Registration AuthUser(string email, string pass)
+        {
+            var data = db.registrations.FirstOrDefault(x => x.Email.Equals(email) && x.Password.Equals(pass));
+            return data;
+        }
+
         public bool Delete()
         {
             throw new NotImplementedException();

@@ -56,6 +56,7 @@
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="EF\FoodCornerEntities.cs" />
     <Compile Include="EF\Models\Registration.cs" />
+    <Compile Include="EF\Models\Token.cs" />
     <Compile Include="Interfaces\Authentication.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202307311423109_Registration.cs" />
@@ -64,6 +65,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\AuthRepo.cs" />
     <Compile Include="Repos\RegistrationRepo.cs" />
     <Compile Include="Repos\Repos.cs" />
   </ItemGroup>

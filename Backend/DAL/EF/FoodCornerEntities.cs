@@ -11,5 +11,6 @@ namespace DAL.EF
     internal class FoodCornerEntities : DbContext
     {
         public DbSet<Registration> registrations { get; set; }
+        public DbSet<Token> tokens { get; set; }
     }
 }
