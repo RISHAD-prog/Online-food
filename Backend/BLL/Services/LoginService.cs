@@ -23,13 +23,13 @@ namespace BLL.Services
                 token.CreationTime = DateTime.Now;
                 token.ExpirationTime = DateTime.Now.AddHours(12);
                 token.TKey = Guid.NewGuid().ToString();
-                token.Role = "user";
+                token.Role = checkDB.Role;
                 var AddUserToken = DataAccessFactory.AccessUserToken().ADD(token);
                 if(AddUserToken != null)
                 {
                     var config = Service.OneTimeMapping<Token, TokenDTO>();
                     var mapper = new Mapper(config);
-                    var data = mapper.Map<Token>(AddUserToken);
+                    return mapper.Map<TokenDTO>(AddUserToken);
                 }
                 return null;
             }
@@ -53,7 +53,6 @@ namespace BLL.Services
             var UserToken = DataAccessFactory.AccessUserToken().Get(token);
             if(UserToken != null)
             {
-                
                 var Data=DataAccessFactory.AccessUserToken().Delete(token);
                 var config = Service.OneTimeMapping<Token, TokenDTO>();
                 var mapper = new Mapper(config);

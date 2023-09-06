@@ -29,5 +29,39 @@ namespace BLL.Services
             }
             return null;
         }
+        public static UsersDTO GetUsers()
+        {
+            var data = DataAccessFactory.UserRegistration().Get();
+            if(data != null)
+            {
+                var config = Service.OneTimeMapping<Registration, UsersDTO>();
+                var mapper = new Mapper(config);
+                return mapper.Map<UsersDTO>(data);
+            }
+            return null;
+        }
+        public static UsersDTO GetUsers(int id)
+        {
+            var data = DataAccessFactory.UserRegistration().Get(id);
+            if (data != null)
+            {
+                var config = Service.OneTimeMapping<Registration, UsersDTO>();
+                var mapper = new Mapper(config);
+                return mapper.Map<UsersDTO>(data);
+            }
+            return null;
+        }
+        public static UsersDTO EditUserDeatails(UsersDTO users, int id)
+        {
+            var config = Service.OneTimeMapping<UsersDTO,Registration>();
+            var mapper = new Mapper(config);
+            var Userdetails= mapper.Map<Registration>(users);
+            var data = DataAccessFactory.UserRegistration().Update(Userdetails, id);
+            if(data != null)
+            {
+                return users;
+            }
+            return null;
+        }
     }
 }

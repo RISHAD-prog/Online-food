@@ -45,7 +45,7 @@ namespace DAL.Repos
             throw new NotImplementedException();
         }
 
-        public Token Update(string id)
+        public Token Update(Token token)
         {
             throw new NotImplementedException();
         }

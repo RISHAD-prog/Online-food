@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class RegistrationRepo : Repos, IRepo<Registration, int, Registration>, Authentication<Registration>
+    internal class RegistrationRepo : Repos, IRepo<Registration, int, Registration>, Authentication<Registration>, IAdminInterface<Registration,int,Registration>
     {
         public Registration ADD(Registration obj)
         {
@@ -20,16 +20,29 @@ namespace DAL.Repos
             return null;
         }
 
+        public Registration AdminUpdate(Registration obj, int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Registration AuthUser(string email, string pass)
         {
             var data = db.registrations.FirstOrDefault(x => x.Email.Equals(email) && x.Password.Equals(pass));
             return data;
         }
 
-        public bool Delete()
+        
+        public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var data = Get(id);
+            db.registrations.Remove(data);
+            if (db.SaveChanges() > 0)
+            {
+                return true;
+            }
+            return false;
         }
+
 
         public bool existingUser(Registration user)
         {
@@ -39,17 +52,23 @@ namespace DAL.Repos
 
         public Registration Get(int id)
         {
-            throw new NotImplementedException();
+            return db.registrations.Find(id);
         }
 
         public List<Registration> Get()
         {
-            throw new NotImplementedException();
+            return db.registrations.ToList();
         }
 
-        public Registration Update(int id)
+        public Registration Update(Registration registration)
         {
-            throw new NotImplementedException();
+            var data = Get(registration.ID);
+            db.Entry(data).CurrentValues.SetValues(registration);
+            if (db.SaveChanges() > 0)
+            {
+                return registration;
+            }
+            return null;
         }
     }
 }

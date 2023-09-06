@@ -57,11 +57,16 @@
     <Compile Include="EF\FoodCornerEntities.cs" />
     <Compile Include="EF\Models\Registration.cs" />
     <Compile Include="EF\Models\Token.cs" />
+    <Compile Include="Interfaces\AdminInterface.cs" />
     <Compile Include="Interfaces\Authentication.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202307311423109_Registration.cs" />
     <Compile Include="Migrations\202307311423109_Registration.designer.cs">
       <DependentUpon>202307311423109_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309061104403_ADDTokenTable.cs" />
+    <Compile Include="Migrations\202309061104403_ADDTokenTable.designer.cs">
+      <DependentUpon>202309061104403_ADDTokenTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +81,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202307311423109_Registration.resx">
       <DependentUpon>202307311423109_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309061104403_ADDTokenTable.resx">
+      <DependentUpon>202309061104403_ADDTokenTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

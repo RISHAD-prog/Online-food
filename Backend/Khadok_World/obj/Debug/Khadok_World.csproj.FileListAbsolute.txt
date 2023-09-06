@@ -264,3 +264,4 @@ E:\Khadok World\Backend\Khadok_World\obj\Debug\Khadok_World.csproj.CoreCompileIn
 E:\Khadok World\Backend\Khadok_World\obj\Debug\Khadok_World.csproj.CopyComplete
 E:\Khadok World\Backend\Khadok_World\obj\Debug\Khadok_World.dll
 E:\Khadok World\Backend\Khadok_World\obj\Debug\Khadok_World.pdb
+E:\Khadok World\Backend\Khadok_World\bin\BLL.dll.config
